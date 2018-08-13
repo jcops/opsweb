@@ -14,8 +14,28 @@
 - **分页**
 - **日志**
 - **扩展用户**
+。。。
 
 #### 说明
-在这个基础包里基础的一个用户增删改查的工作，即开即用，可以进行扩展
+在这个基础包里有一个用户增删改查的接口，即开即用，可以进行扩展
 
 
+#### 安装部署
+```
+# 安装依赖包
+pip install requirements.text
+# 修改数据库地址
+修改opsweb/settings文件
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'test002',
+        'USER': 'root',
+        'PASSWORD': '123456',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+    },
+}
+#启动
+python manage.py  runserver 0:8000
+```
