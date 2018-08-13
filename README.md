@@ -23,7 +23,7 @@
 #### 安装部署
 ```
 # 安装依赖包
-pip install requirements.text
+pip install requirements.txt
 # 修改数据库地址
 修改opsweb/settings文件
 DATABASES = {
