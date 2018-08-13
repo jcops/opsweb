@@ -1,0 +1,210 @@
+2018-08-13 13:52:28 [django.request:228] [ERROR] - Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/views.py", line 31, in get
+    schema = self.schema_generator.get_schema(request, self.public)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/generators.py", line 286, in get_schema
+    links = self.get_links(None if public else request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/generators.py", line 322, in get_links
+    if not self.has_view_permissions(path, method, view):
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/generators.py", line 397, in has_view_permissions
+    view.check_permissions(view.request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 321, in check_permissions
+    for permission in self.get_permissions():
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 268, in get_permissions
+    return [permission() for permission in self.permission_classes]
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 268, in <listcomp>
+    return [permission() for permission in self.permission_classes]
+TypeError: 'str' object is not callable
+2018-08-13 13:52:31 [django.request:228] [ERROR] - Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/views.py", line 31, in get
+    schema = self.schema_generator.get_schema(request, self.public)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/generators.py", line 286, in get_schema
+    links = self.get_links(None if public else request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/generators.py", line 322, in get_links
+    if not self.has_view_permissions(path, method, view):
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/generators.py", line 397, in has_view_permissions
+    view.check_permissions(view.request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 321, in check_permissions
+    for permission in self.get_permissions():
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 268, in get_permissions
+    return [permission() for permission in self.permission_classes]
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 268, in <listcomp>
+    return [permission() for permission in self.permission_classes]
+TypeError: 'str' object is not callable
+2018-08-13 13:52:33 [django.request:228] [ERROR] - Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/views.py", line 31, in get
+    schema = self.schema_generator.get_schema(request, self.public)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/generators.py", line 286, in get_schema
+    links = self.get_links(None if public else request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/generators.py", line 322, in get_links
+    if not self.has_view_permissions(path, method, view):
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/generators.py", line 397, in has_view_permissions
+    view.check_permissions(view.request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 321, in check_permissions
+    for permission in self.get_permissions():
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 268, in get_permissions
+    return [permission() for permission in self.permission_classes]
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 268, in <listcomp>
+    return [permission() for permission in self.permission_classes]
+TypeError: 'str' object is not callable
+2018-08-13 13:52:34 [django.request:228] [ERROR] - Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/views.py", line 31, in get
+    schema = self.schema_generator.get_schema(request, self.public)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/generators.py", line 286, in get_schema
+    links = self.get_links(None if public else request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/generators.py", line 322, in get_links
+    if not self.has_view_permissions(path, method, view):
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/generators.py", line 397, in has_view_permissions
+    view.check_permissions(view.request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 321, in check_permissions
+    for permission in self.get_permissions():
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 268, in get_permissions
+    return [permission() for permission in self.permission_classes]
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 268, in <listcomp>
+    return [permission() for permission in self.permission_classes]
+TypeError: 'str' object is not callable
+2018-08-13 13:52:47 [django.request:228] [ERROR] - Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/views.py", line 31, in get
+    schema = self.schema_generator.get_schema(request, self.public)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/generators.py", line 286, in get_schema
+    links = self.get_links(None if public else request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/generators.py", line 322, in get_links
+    if not self.has_view_permissions(path, method, view):
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/generators.py", line 397, in has_view_permissions
+    view.check_permissions(view.request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 321, in check_permissions
+    for permission in self.get_permissions():
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 268, in get_permissions
+    return [permission() for permission in self.permission_classes]
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 268, in <listcomp>
+    return [permission() for permission in self.permission_classes]
+TypeError: 'str' object is not callable
+2018-08-13 13:52:50 [django.request:228] [WARNING] - Not Found: /
+2018-08-13 13:52:55 [django.request:228] [WARNING] - Not Found: /favicon.ico
+2018-08-13 13:52:58 [django.request:228] [WARNING] - Not Found: /DOCS
+2018-08-13 13:53:02 [django.request:228] [ERROR] - Internal Server Error: /docs/
+Traceback (most recent call last):
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/views.py", line 31, in get
+    schema = self.schema_generator.get_schema(request, self.public)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/generators.py", line 286, in get_schema
+    links = self.get_links(None if public else request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/generators.py", line 322, in get_links
+    if not self.has_view_permissions(path, method, view):
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/schemas/generators.py", line 397, in has_view_permissions
+    view.check_permissions(view.request)
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 321, in check_permissions
+    for permission in self.get_permissions():
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 268, in get_permissions
+    return [permission() for permission in self.permission_classes]
+  File "/home/vagrant/testdrf_env/lib/python3.6/site-packages/rest_framework/views.py", line 268, in <listcomp>
+    return [permission() for permission in self.permission_classes]
+TypeError: 'str' object is not callable
+2018-08-13 14:12:16 [django.request:228] [WARNING] - Not Found: /
+2018-08-13 14:12:18 [django.request:228] [WARNING] - Not Found: /
+2018-08-13 14:12:23 [django.request:228] [WARNING] - Not Found: /
+2018-08-13 14:12:27 [django.request:228] [WARNING] - Not Found: /、
+2018-08-13 14:12:31 [django.request:228] [WARNING] - Not Found: //
+2018-08-13 14:16:43 [django.request:228] [WARNING] - Not Found: //
+2018-08-13 14:16:46 [django.request:228] [WARNING] - Not Found: /
+2018-08-13 14:17:10 [django.request:228] [WARNING] - Not Found: //
+2018-08-13 14:44:50 [django.request:228] [WARNING] - Unauthorized: /users/
