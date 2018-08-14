@@ -36,6 +36,9 @@ DATABASES = {
         'PORT': '3306',
     },
 }
+#迁移数据库
+python manger.py makemigrations
+python manage.py migrate
 #启动
 python manage.py  runserver 0:8000
 ```
